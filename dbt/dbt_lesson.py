@@ -48,7 +48,7 @@ DAG          The graph of models and how they depend on each other.
 We use DuckDB, a database that runs from a single local file.
 
     python -m venv .venv
-    source .venv/bin/activate      # Windows: .venv\\\\Scripts\\\\activate
+    source .venv/bin/activate      # Windows: .venv\\Scripts\\activate
     pip install dbt-duckdb
 
 Check it works:
