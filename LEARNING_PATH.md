@@ -22,6 +22,7 @@ You should already be comfortable with Python and SQL, and know basic Git and th
 | Kubernetes | Docker | `kubectl` and `minikube`, about 2 CPUs and 2 GB of free RAM |
 | Terraform | Docker (for the practice project) | A cloud account (AWS etc.) for real use |
 | Data governance and security | Data modelling, some cloud or database knowledge | Better with CI/CD, Terraform and a warehouse to practise on |
+| DSA | Python | Nothing to install (Python standard library only) |
 
 ## Recommended order
 
@@ -37,6 +38,7 @@ You should already be comfortable with Python and SQL, and know basic Git and th
 10. **Kubernetes** (`kubernetes/`): Run your containers at scale. It is a big topic, so it comes after you are comfortable with Docker and the tools above.
 11. **Terraform** (`terraform/`): Build the cloud infrastructure that the others run on.
 12. **Data governance and security** (`data_governance/`): Protect and manage the data across all of the above. It ties everything together, so it is best learned last, once you have real pipelines to apply it to.
+13. **DSA** (`dsa/`): Needs only Python, so it can be learned at any time. Learn it alongside any step above, ideally before Spark, since Spark's joins, sorting and partitioning build on these ideas.
 
 ```
 Terminal + Git, Python, SQL
@@ -58,6 +60,7 @@ Terminal + Git, Python, SQL
 
 ## Notes
 
+- DSA is listed last only to keep the numbering simple. It has no tool dependencies, so doing it early (right after unit testing) works well, and you can write tests for your solutions.
 - Data modelling is mostly design work, so you can learn it at any time before dbt. Moving it first is fine.
 - Terraform can be learned any time after Docker. If you want to try cloud tools early, move it up.
 - Kafka can be learned before Spark. Do Spark first if you want to use Spark Structured Streaming with Kafka.

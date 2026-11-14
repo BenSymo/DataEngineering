@@ -30,8 +30,10 @@ DataEngineering/
 │   └── kubernetes_lesson.py
 ├── terraform/
 │   └── terraform_lesson.py
-└── data_governance/
-    └── data_governance_lesson.py
+├── data_governance/
+│   └── data_governance_lesson.py
+└── dsa/
+    └── dsa_lesson.py
 ```
 
 ## The lessons
@@ -50,6 +52,7 @@ DataEngineering/
 | `kubernetes/` | Kubernetes | Running containers at scale |
 | `terraform/` | Terraform | Infrastructure as code |
 | `data_governance/` | Governance and security | Access control, PII, secrets, retention |
+| `dsa/` | Data structures and algorithms | Big O, dicts and sets, sorting, graphs, with data pipeline examples |
 
 ## How to use it
 
