@@ -32,8 +32,17 @@ DataEngineering/
 │   └── terraform_lesson.py
 ├── data_governance/
 │   └── data_governance_lesson.py
-└── dsa/
-    └── dsa_lesson.py
+├── dsa/
+│   └── dsa_lesson.py
+├── apis/
+│   └── apis_lesson.py
+├── warehouse_patterns/
+│   └── warehouse_patterns_lesson.py
+├── etl_vs_elt/
+│   └── etl_vs_elt_lesson.py
+└── quiz/
+    ├── quiz.py
+    └── questions.py
 ```
 
 ## The lessons
@@ -53,6 +62,9 @@ DataEngineering/
 | `terraform/` | Terraform | Infrastructure as code |
 | `data_governance/` | Governance and security | Access control, PII, secrets, retention |
 | `dsa/` | Data structures and algorithms | Big O, dicts and sets, sorting, graphs, with data pipeline examples |
+| `apis/` | Building APIs | REST, HTTP methods and status codes, FastAPI, pagination, auth, calling APIs in pipelines |
+| `warehouse_patterns/` | Warehouse patterns | Warehouse vs lake vs lakehouse, Kimball vs Inmon, layers, loading patterns, idempotency, partitioning |
+| `etl_vs_elt/` | ETL vs ELT | The two approaches, pros and cons, when to use each, CDC and reverse ETL |
 
 ## How to use it
 
@@ -64,6 +76,11 @@ DataEngineering/
    ```
 
 3. Follow the setup steps and do the practice exercise at the end of each lesson.
+4. Test yourself with the quiz. It asks 10 random multiple-choice questions from all the lessons. Type 1 to 5 to answer:
+
+   ```
+   python quiz/quiz.py
+   ```
 
 The lessons only print text, so they need Python 3 and nothing else. The tools they teach (Docker, Spark and so on) are installed separately, as each lesson explains.
 
@@ -73,5 +90,6 @@ The lessons only print text, so they need Python 3 and nothing else. The tools t
 2. Add `<name>_lesson.py` with the lesson text in a `LESSON` string and a `main()` that prints it. Copy an existing lesson as a template.
 3. Keep the same lesson layout: what it is, key words, install, hands-on examples, good habits, practice exercise.
 4. Add the topic to the table above and to `LEARNING_PATH.md`.
+5. Add quiz questions for it in `quiz/questions.py`.
 
 Practice code you write while following a lesson can go in the same folder, next to the lesson file.

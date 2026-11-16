@@ -23,6 +23,9 @@ You should already be comfortable with Python and SQL, and know basic Git and th
 | Terraform | Docker (for the practice project) | A cloud account (AWS etc.) for real use |
 | Data governance and security | Data modelling, some cloud or database knowledge | Better with CI/CD, Terraform and a warehouse to practise on |
 | DSA | Python | Nothing to install (Python standard library only) |
+| Building APIs | Python, unit testing | `fastapi[standard]` and `requests` packages (Docker to ship it) |
+| Warehouse patterns | SQL, data modelling | `duckdb` package (or Postgres in Docker) |
+| ETL vs ELT | Python, SQL, warehouse patterns | `duckdb` and `pandas` packages; better after dbt and Airflow |
 
 ## Recommended order
 
@@ -39,6 +42,11 @@ You should already be comfortable with Python and SQL, and know basic Git and th
 11. **Terraform** (`terraform/`): Build the cloud infrastructure that the others run on.
 12. **Data governance and security** (`data_governance/`): Protect and manage the data across all of the above. It ties everything together, so it is best learned last, once you have real pipelines to apply it to.
 13. **DSA** (`dsa/`): Needs only Python, so it can be learned at any time. Learn it alongside any step above, ideally before Spark, since Spark's joins, sorting and partitioning build on these ideas.
+14. **Building APIs** (`apis/`): Build and call web APIs. Best after unit testing (for testing your API) and Docker (for shipping it). Can be learned any time after Python.
+15. **Warehouse patterns** (`warehouse_patterns/`): How warehouses are organised and loaded. Read it right after data modelling, before dbt.
+16. **ETL vs ELT** (`etl_vs_elt/`): The two ways to build pipelines. Read it after warehouse patterns, ideally before dbt and Airflow, so you know where each tool fits.
+
+When you finish a few lessons, test yourself with `python quiz/quiz.py`.
 
 ```
 Terminal + Git, Python, SQL
@@ -67,4 +75,6 @@ Terminal + Git, Python, SQL
 - Kubernetes can be moved earlier if you want to run Airflow, Spark or Kafka on it.
 - CI/CD can be learned right after unit testing, so you can use it from the start on all the later projects.
 - Data governance is placed last because it applies to everything. Read its lesson earlier if you work with personal data, and use the checklist (section 12) from the start.
+- Warehouse patterns and ETL vs ELT are numbered last, but fit best between data modelling (step 3) and dbt (step 6).
+- Building APIs needs only Python, so it can be learned at any time.
 - Start with the lesson in each folder (`python <folder>/<name>_lesson.py`) and do its practice exercise before moving on.
